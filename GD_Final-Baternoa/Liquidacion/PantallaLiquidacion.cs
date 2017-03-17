@@ -17,6 +17,9 @@ namespace GD_Final_Baternoa.Liquidacion
     {
         SqlConnection con = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
         int sumaH = 0;
+        int sumaC = 0;
+        int sumarHijos = 0;
+        int sumaComision = 0;
 
 
         public PantallaLiquidacion()
@@ -47,7 +50,7 @@ namespace GD_Final_Baternoa.Liquidacion
         }
         public void comboAños()
         {
-            for (int i = 1950; i <= DateTime.Now.Year; i++)
+            for (int i = 2008; i <= DateTime.Now.Year; i++)
             {
                 comboAño.Items.Add(i);
             }
@@ -55,19 +58,13 @@ namespace GD_Final_Baternoa.Liquidacion
 
         public void comboMeses()
         {
-            comboMes.Items.Add("Enero");
-            comboMes.Items.Add("Febrero");
-            comboMes.Items.Add("Marzo");
-            comboMes.Items.Add("Abril");
-            comboMes.Items.Add("Mayo");
-            comboMes.Items.Add("Junio");
-            comboMes.Items.Add("Julio");
-            comboMes.Items.Add("Agosto");
-            comboMes.Items.Add("Septiembre");
-            comboMes.Items.Add("Octubre");
-            comboMes.Items.Add("Noviembre");
-            comboMes.Items.Add("Diciembre");
+            for (int i = 01; i <= 12; i++)
+            {
+                comboMes.Items.Add(i);
+            }
         }
+
+       
 
 
         public void cargarCategorias()
@@ -168,7 +165,7 @@ namespace GD_Final_Baternoa.Liquidacion
             }
             con.Close();
 
-            if (txtDesc.Text == "Sueldo Basico" | txtDesc.Text == "Antiguedad" | txtDesc.Text == "Jubilacion" | txtDesc.Text == "Obra Social" | txtDesc.Text == "Hijos Menores")
+            if (txtDesc.Text == "Sueldo Basico" | txtDesc.Text == "Antiguedad" | txtDesc.Text == "Jubilacion" | txtDesc.Text == "Obra Social" | txtDesc.Text == "Hijos Menores" | txtDesc.Text == "Comision")
             {
                 txtUnidades.ReadOnly = true;
                 txtUnidades.Text = "";
@@ -196,6 +193,7 @@ namespace GD_Final_Baternoa.Liquidacion
             string antig = txtAnt.Text;
             string unidades = txtUnidades.Text;
             string hijos = txtHijos.Text;
+            string comi = txtComision.Text;
             float monto = 0;
 
 
@@ -246,7 +244,7 @@ namespace GD_Final_Baternoa.Liquidacion
                             {
                                 if (txtDesc.Text == "Obra Social")
                                 {
-                                   
+
                                     monto = float.Parse(val) * float.Parse(basico);
                                     dgv.Rows.Add(id, des, monto, tipo);
                                 }
@@ -255,6 +253,14 @@ namespace GD_Final_Baternoa.Liquidacion
                                     {
                                         monto = float.Parse(val) * float.Parse(hijos);
                                         dgv.Rows.Add(id, des, monto, tipo);
+                                    }
+                                    else {
+                                        if (txtDesc.Text == "Comision")
+                                        {
+                                            monto = float.Parse(val) * float.Parse(comi);
+                                            dgv.Rows.Add(id, des, monto, tipo);
+                                        }
+
                                     }
 
                                 }
@@ -325,50 +331,161 @@ namespace GD_Final_Baternoa.Liquidacion
 
 
         }
-        private void CargarFamiliar()
-        {
-            con.Open();
-            SqlDataAdapter daf = new SqlDataAdapter("Select * From Familiar Where idEmpleado = '" + comboEmpleado.SelectedValue + "' and Parentezco = 'Hijo' ", con);
-            DataSet dsf = new DataSet();
-            daf.Fill(dsf, "Familiar");
+       
 
-            dgvFamilia.DataSource = dsf;
-            dgvFamilia.DataMember = "Familiar";
+        private void HijosMenores() {
+           
+            string cadcon = "Select * From Familiar Where idEmpleado = '" + comboEmpleado.SelectedValue + "'";
+            SqlCommand cn = new SqlCommand(cadcon, con);
+            con.Open();
+
+            SqlDataReader leer = cn.ExecuteReader();
+          
+            while (leer.Read())
+            {
+                string dni = leer["DNI"].ToString();
+
+                SqlConnection con2 = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
+                con2.Open();
+                string sql1 = " SELECT [FechaNacimiento] from Familiar where DNI = " + dni + "";
+                SqlCommand cmd1 = new SqlCommand(sql1);
+                cmd1.CommandType = System.Data.CommandType.Text;
+                cmd1.Connection = con2;
+                SqlDataReader reader1 = cmd1.ExecuteReader();
+
+                if (reader1.Read())
+                {
+                    
+                    string fec = reader1[0].ToString();
+                    DateTime fechaNac = Convert.ToDateTime(fec);
+                    con2.Close();
+
+                    SqlConnection con3 = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
+                    con3.Open();
+                    DateTime fechaAct = DateTime.Now.AddYears(-1);
+                    string sql = " SELECT DATEDIFF( YEAR, '" + fechaNac + "', '" + fechaAct + "')";
+                    SqlCommand cmd = new SqlCommand(sql);
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Connection = con3;
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    string edad = reader[0].ToString();
+                    int edadHijo = int.Parse(edad);
+                    con3.Close();
+                    if (edadHijo < 18)
+                    {
+                        sumarHijos = sumarHijos + 1;
+                        txtHijos.Text = sumarHijos.ToString();
+                    }
+                }
+                else
+                {
+                   // string fn = null;
+                }
+               
+            }
+            MessageBox.Show("Total de Hijos Menores Calculados");
             con.Close();
+
+
+        } 
+
+        private void CargarComisiones()
+        {
+            string mesPeriodo = comboMes.SelectedItem.ToString();
+            string añoPeriodo = comboAño.SelectedItem.ToString();
+
+            string cadcon = "Select * From Venta Where idEmpleado = '" + comboEmpleado.SelectedValue + "'";
+            SqlCommand cn = new SqlCommand(cadcon, con);
+            con.Open();
+
+            SqlDataReader leer = cn.ExecuteReader();
+
+            while (leer.Read())
+            {
+                string idV = leer["idVenta"].ToString();
+                string montoCom = leer["ComisionEmpleado"].ToString();
+
+                SqlConnection con2 = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
+                con2.Open();
+                string sql1 = " SELECT [FechaVenta] from Venta where idVenta = " + idV + "";
+                SqlCommand cmd1 = new SqlCommand(sql1);
+                cmd1.CommandType = System.Data.CommandType.Text;
+                cmd1.Connection = con2;
+                SqlDataReader reader1 = cmd1.ExecuteReader();
+
+                if (reader1.Read())
+                {
+
+                    string fec = reader1[0].ToString();
+                    DateTime fechaV = Convert.ToDateTime(fec);
+                    con2.Close();
+
+                    SqlConnection con3 = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
+                    SqlConnection con4 = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
+                    con3.Open();
+                  
+
+                    string sql = " SELECT DATEPART( YEAR, '" + fechaV + "')";
+                    SqlCommand cmd = new SqlCommand(sql);
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.Connection = con3;
+                    SqlDataReader reader = cmd.ExecuteReader();
+                    reader.Read();
+                    string añoVenta = reader[0].ToString();
+                  
+
+            
+
+                    con3.Close();
+                    con4.Open();
+
+                    string sql2 = " SELECT DATEPART( MONTH, '" + fechaV + "')";
+                    SqlCommand cmd2 = new SqlCommand(sql2);
+                    cmd2.CommandType = System.Data.CommandType.Text;
+                    cmd2.Connection = con4;
+                    SqlDataReader reader2 = cmd2.ExecuteReader();
+                    reader2.Read();
+                    string mesVenta = reader2[0].ToString();
+                    
+                    con4.Close();
+
+                    if (añoVenta.Equals(añoPeriodo))
+                    {
+                        if (mesVenta.Equals(mesPeriodo))
+                        {
+                            sumaComision = sumaComision + int.Parse(montoCom);
+                            txtComision.Text = sumaComision.ToString();
+                            MessageBox.Show("Comisiones calculadas");
+                        }
+                    }
+                    else {
+                        MessageBox.Show("No hay comisiones");
+                    }
+                }
+                else
+                {
+                    // string fn = null;
+                   
+                }
+
+            }
+            con.Close();
+
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            CargarFamiliar();
-
-
+            HijosMenores();
         }
 
         private void dgvFamilia_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            txtDNI.Text = dgvFamilia.CurrentRow.Cells["DNI"].Value.ToString();
-            dtpFamiliar.Text = dgvFamilia.CurrentRow.Cells["FechaNacimiento"].Value.ToString();
-
-            int edad;
-            edad = System.DateTime.Today.Year - dtpFamiliar.Value.Year;
-            if (System.DateTime.Today.Month < dtpFamiliar.Value.Month)
-            {
-                if (dtpFamiliar.Value.Day < System.DateTime.Today.Day)
-                {
-                    edad = edad - 1;
-                }
-            }
-            else
-            { }
-
-            txtEdad.Text = edad.ToString();
+           
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            sumaH = sumaH + 1;
-            txtHijos.Text = sumaH.ToString();
-            dgvFamilia.Rows.Remove(dgvFamilia.CurrentRow);
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -419,8 +536,47 @@ namespace GD_Final_Baternoa.Liquidacion
             }
             finally {
                 MessageBox.Show("Liquidacion Realizada");
+
+                txtAnt.Text = null;
+                txtAyP.Text = null;
+                txtBasico.Text = null;
+                txtCUIL.Text = null;
+                txtDesc.Text = null;
+                txtHijos.Text = null;
+                txtIDCon.Text = null;
+                txtTipo.Text = null;
+                txtUnidades.Text = null;
+                txtValor.Text = null;
+                dateTimePicker2.Text = null;
+                comboMes.Text = null;
+                comboAño.Text = null;
+                dgv.Rows.Clear();
             }
         }
 
+        private void button9_Click(object sender, EventArgs e)
+        {
+            CargarComisiones();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dgv.Rows.RemoveAt(dgv.CurrentRow.Index);
+        }
+
+        private void dgvComision_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+    
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+       
+        }
+
+        private void comboMes_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
     }

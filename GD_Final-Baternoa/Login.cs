@@ -48,9 +48,18 @@ namespace GD_Final_Baternoa
             sda.Fill(dt);
             if (dt.Rows.Count == 1)
             {
-                this.Hide();
-                Menu.MenuPrincipal mp = new Menu.MenuPrincipal();
-                mp.Show();
+                if (nombreU == "Administrador")
+                {
+                    this.Hide();
+                    Menu.MenuPrincipal mp = new Menu.MenuPrincipal();
+                    mp.Show();
+                }
+                else {
+                    this.Hide();
+                    Menu.MenuSecundario ms = new Menu.MenuSecundario();
+                    ms.Show();
+                }
+
             }
             else
             {

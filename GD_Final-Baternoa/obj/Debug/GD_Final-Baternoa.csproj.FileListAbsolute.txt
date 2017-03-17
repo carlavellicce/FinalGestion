@@ -98,4 +98,4 @@ C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final
 C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Proveedor.Proveedores.resources
 C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Venta.PantallaVenta.resources
 C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.csproj.GenerateResource.Cache
-C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Empleado.VerFamilia.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Menu.MenuSecundario.resources

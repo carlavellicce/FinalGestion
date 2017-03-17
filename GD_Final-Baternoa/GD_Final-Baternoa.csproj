@@ -98,12 +98,6 @@
     <Compile Include="Empleado\Empleados.Designer.cs">
       <DependentUpon>Empleados.cs</DependentUpon>
     </Compile>
-    <Compile Include="Empleado\VerFamilia.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Empleado\VerFamilia.Designer.cs">
-      <DependentUpon>VerFamilia.cs</DependentUpon>
-    </Compile>
     <Compile Include="Liquidacion\AdminConceptos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -139,6 +133,12 @@
     </Compile>
     <Compile Include="Menu\MenuPrincipal.Designer.cs">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Menu\MenuSecundario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu\MenuSecundario.Designer.cs">
+      <DependentUpon>MenuSecundario.cs</DependentUpon>
     </Compile>
     <Compile Include="Producto\Productos.cs">
       <SubType>Form</SubType>
@@ -183,9 +183,6 @@
     <EmbeddedResource Include="Empleado\Empleados.resx">
       <DependentUpon>Empleados.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Empleado\VerFamilia.resx">
-      <DependentUpon>VerFamilia.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Liquidacion\AdminConceptos.resx">
       <DependentUpon>AdminConceptos.cs</DependentUpon>
     </EmbeddedResource>
@@ -203,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Menu\MenuPrincipal.resx">
       <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu\MenuSecundario.resx">
+      <DependentUpon>MenuSecundario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Producto\Productos.resx">
       <DependentUpon>Productos.cs</DependentUpon>

@@ -126,7 +126,7 @@
             // 
             // buttonSalir
             // 
-            this.buttonSalir.Location = new System.Drawing.Point(392, 349);
+            this.buttonSalir.Location = new System.Drawing.Point(422, 351);
             this.buttonSalir.Name = "buttonSalir";
             this.buttonSalir.Size = new System.Drawing.Size(75, 23);
             this.buttonSalir.TabIndex = 9;
@@ -184,7 +184,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 379);
+            this.ClientSize = new System.Drawing.Size(509, 386);
             this.Controls.Add(this.textBoxID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.button2);

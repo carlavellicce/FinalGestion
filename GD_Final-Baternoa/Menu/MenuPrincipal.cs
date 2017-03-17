@@ -69,5 +69,10 @@ namespace GD_Final_Baternoa.Menu
             Empleado.ABMUsuario abmu = new Empleado.ABMUsuario();
             abmu.Visible = true; 
         }
+
+        private void btnCompra_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -19,7 +19,24 @@ namespace GD_Final_Baternoa.Liquidacion
 
         private void button3_Click(object sender, EventArgs e)
         {
+            PantallaLiquidacion p = new PantallaLiquidacion();
+            p.Visible = true;
+        }
 
+        private void Principal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            AdminConceptos ac = new AdminConceptos();
+            ac.Visible = true;
         }
     }
 }

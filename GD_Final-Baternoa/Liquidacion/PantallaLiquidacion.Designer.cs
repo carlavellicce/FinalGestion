@@ -28,149 +28,490 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.comboCategoria = new System.Windows.Forms.ComboBox();
+            this.comboEmpleado = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
+            this.txtAyP = new System.Windows.Forms.TextBox();
+            this.txtCUIL = new System.Windows.Forms.TextBox();
+            this.txtAnt = new System.Windows.Forms.TextBox();
+            this.comboConceptos = new System.Windows.Forms.ComboBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.label15 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.txtIDCon = new System.Windows.Forms.TextBox();
+            this.txtValor = new System.Windows.Forms.TextBox();
+            this.txtUnidades = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.IDEmpleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ApellidoyNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.dgv = new System.Windows.Forms.DataGridView();
+            this.txtfechaing = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.txtBasico = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.txtDesc = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txtTipo = new System.Windows.Forms.TextBox();
+            this.button7 = new System.Windows.Forms.Button();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtHijos = new System.Windows.Forms.TextBox();
+            this.dgvFamilia = new System.Windows.Forms.DataGridView();
+            this.txtDNI = new System.Windows.Forms.TextBox();
+            this.txtEdad = new System.Windows.Forms.TextBox();
+            this.dtpFamiliar = new System.Windows.Forms.DateTimePicker();
+            this.button8 = new System.Windows.Forms.Button();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
+            this.comboMes = new System.Windows.Forms.ComboBox();
+            this.comboAño = new System.Windows.Forms.ComboBox();
+            this.ID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Descripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.IDConcepto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorNovedad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Fecha = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ID_Empleado = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFamilia)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(495, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Fecha";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(553, 10);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 1;
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(90, 57);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(270, 25);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(100, 13);
+            this.label2.Size = new System.Drawing.Size(170, 13);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Tipo de Liquidación";
+            this.label2.Text = "CATEGORIA DE EMPLEADO";
             // 
-            // comboBox1
+            // comboCategoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(215, 57);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 3;
+            this.comboCategoria.FormattingEnabled = true;
+            this.comboCategoria.Location = new System.Drawing.Point(463, 22);
+            this.comboCategoria.Name = "comboCategoria";
+            this.comboCategoria.Size = new System.Drawing.Size(134, 21);
+            this.comboCategoria.TabIndex = 3;
+            this.comboCategoria.SelectedIndexChanged += new System.EventHandler(this.comboCategoria_SelectedIndexChanged);
             // 
-            // label3
+            // comboEmpleado
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(90, 95);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(27, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Mes";
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(215, 92);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(121, 21);
-            this.comboBox2.TabIndex = 5;
+            this.comboEmpleado.FormattingEnabled = true;
+            this.comboEmpleado.Location = new System.Drawing.Point(463, 49);
+            this.comboEmpleado.Name = "comboEmpleado";
+            this.comboEmpleado.Size = new System.Drawing.Size(134, 21);
+            this.comboEmpleado.TabIndex = 5;
+            this.comboEmpleado.SelectedIndexChanged += new System.EventHandler(this.comboEmpleado_SelectedIndexChanged);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 152);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(270, 82);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(122, 13);
+            this.label4.Size = new System.Drawing.Size(63, 13);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Categoria de Empleados";
+            this.label4.Text = "PERIODO";
             // 
-            // comboBox3
+            // label5
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(215, 144);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(121, 21);
-            this.comboBox3.TabIndex = 7;
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(270, 50);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(82, 15);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "EMPLEADO";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(8, 456);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(90, 15);
+            this.label7.TabIndex = 14;
+            this.label7.Text = "CONCEPTOS";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(715, 674);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(75, 23);
+            this.button3.TabIndex = 16;
+            this.button3.Text = "Cancelar";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(48, 214);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(92, 13);
+            this.label10.TabIndex = 20;
+            this.label10.Text = "Apellido y Nombre";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(49, 240);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 21;
+            this.label11.Text = "CUIL";
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(49, 292);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(61, 13);
+            this.label13.TabIndex = 23;
+            this.label13.Text = "Antiguedad";
+            // 
+            // txtAyP
+            // 
+            this.txtAyP.Location = new System.Drawing.Point(150, 211);
+            this.txtAyP.Name = "txtAyP";
+            this.txtAyP.ReadOnly = true;
+            this.txtAyP.Size = new System.Drawing.Size(100, 20);
+            this.txtAyP.TabIndex = 24;
+            // 
+            // txtCUIL
+            // 
+            this.txtCUIL.Location = new System.Drawing.Point(150, 237);
+            this.txtCUIL.Name = "txtCUIL";
+            this.txtCUIL.ReadOnly = true;
+            this.txtCUIL.Size = new System.Drawing.Size(100, 20);
+            this.txtCUIL.TabIndex = 25;
+            // 
+            // txtAnt
+            // 
+            this.txtAnt.Location = new System.Drawing.Point(150, 289);
+            this.txtAnt.Name = "txtAnt";
+            this.txtAnt.ReadOnly = true;
+            this.txtAnt.Size = new System.Drawing.Size(100, 20);
+            this.txtAnt.TabIndex = 27;
+            // 
+            // comboConceptos
+            // 
+            this.comboConceptos.FormattingEnabled = true;
+            this.comboConceptos.Location = new System.Drawing.Point(115, 456);
+            this.comboConceptos.Name = "comboConceptos";
+            this.comboConceptos.Size = new System.Drawing.Size(121, 21);
+            this.comboConceptos.TabIndex = 28;
+            this.comboConceptos.SelectedIndexChanged += new System.EventHandler(this.comboConceptos_SelectedIndexChanged);
+            // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Location = new System.Drawing.Point(12, 498);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(17, 13);
+            this.label14.TabIndex = 29;
+            this.label14.Text = "lD";
+            // 
+            // label15
+            // 
+            this.label15.AutoSize = true;
+            this.label15.Location = new System.Drawing.Point(12, 550);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(31, 13);
+            this.label15.TabIndex = 30;
+            this.label15.Text = "Valor";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Location = new System.Drawing.Point(8, 606);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(52, 13);
+            this.label16.TabIndex = 31;
+            this.label16.Text = "Unidades";
+            // 
+            // txtIDCon
+            // 
+            this.txtIDCon.Location = new System.Drawing.Point(104, 495);
+            this.txtIDCon.Name = "txtIDCon";
+            this.txtIDCon.ReadOnly = true;
+            this.txtIDCon.Size = new System.Drawing.Size(100, 20);
+            this.txtIDCon.TabIndex = 32;
+            // 
+            // txtValor
+            // 
+            this.txtValor.Location = new System.Drawing.Point(104, 547);
+            this.txtValor.Name = "txtValor";
+            this.txtValor.ReadOnly = true;
+            this.txtValor.Size = new System.Drawing.Size(100, 20);
+            this.txtValor.TabIndex = 33;
+            // 
+            // txtUnidades
+            // 
+            this.txtUnidades.Location = new System.Drawing.Point(104, 599);
+            this.txtUnidades.Name = "txtUnidades";
+            this.txtUnidades.Size = new System.Drawing.Size(100, 20);
+            this.txtUnidades.TabIndex = 34;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(361, 142);
+            this.button1.Location = new System.Drawing.Point(35, 655);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 8;
-            this.button1.Text = "Aceptar";
+            this.button1.TabIndex = 35;
+            this.button1.Text = "Agregar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // dataGridView1
+            // button4
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.IDEmpleado,
-            this.ApellidoyNombre});
-            this.dataGridView1.Location = new System.Drawing.Point(63, 214);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(237, 150);
-            this.dataGridView1.TabIndex = 9;
-            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
+            this.button4.Location = new System.Drawing.Point(129, 655);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 23);
+            this.button4.TabIndex = 36;
+            this.button4.Text = "Eliminar";
+            this.button4.UseVisualStyleBackColor = true;
             // 
-            // IDEmpleado
+            // button5
             // 
-            this.IDEmpleado.HeaderText = "ID Empleado";
-            this.IDEmpleado.Name = "IDEmpleado";
+            this.button5.Location = new System.Drawing.Point(551, 625);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(121, 23);
+            this.button5.TabIndex = 37;
+            this.button5.Text = "Iniciar Liquidacion";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
-            // ApellidoyNombre
+            // dgv
             // 
-            this.ApellidoyNombre.HeaderText = "Apellido y Nombre";
-            this.ApellidoyNombre.Name = "ApellidoyNombre";
-            // 
-            // dataGridView2
-            // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv.AllowDrop = true;
+            this.dgv.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.ID,
             this.Descripcion,
             this.Valor,
-            this.IDConcepto});
-            this.dataGridView2.Location = new System.Drawing.Point(398, 214);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(344, 150);
-            this.dataGridView2.TabIndex = 10;
-            this.dataGridView2.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView2_CellContentClick);
+            this.Tipo});
+            this.dgv.Location = new System.Drawing.Point(374, 456);
+            this.dgv.Name = "dgv";
+            this.dgv.Size = new System.Drawing.Size(416, 163);
+            this.dgv.TabIndex = 38;
+            this.dgv.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgv_CellContentClick);
+            // 
+            // txtfechaing
+            // 
+            this.txtfechaing.AutoSize = true;
+            this.txtfechaing.Location = new System.Drawing.Point(49, 269);
+            this.txtfechaing.Name = "txtfechaing";
+            this.txtfechaing.Size = new System.Drawing.Size(75, 13);
+            this.txtfechaing.TabIndex = 41;
+            this.txtfechaing.Text = "Fecha Ingreso";
+            // 
+            // dateTimePicker2
+            // 
+            this.dateTimePicker2.Enabled = false;
+            this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker2.Location = new System.Drawing.Point(150, 263);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(100, 20);
+            this.dateTimePicker2.TabIndex = 42;
+            this.dateTimePicker2.ValueChanged += new System.EventHandler(this.dateTimePicker2_ValueChanged);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(442, 121);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(75, 23);
+            this.button2.TabIndex = 43;
+            this.button2.Text = "Aceptar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(563, 121);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 23);
+            this.button6.TabIndex = 44;
+            this.button6.Text = "Cancelar";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(48, 318);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(75, 13);
+            this.label1.TabIndex = 45;
+            this.label1.Text = "Sueldo Basico";
+            // 
+            // txtBasico
+            // 
+            this.txtBasico.Location = new System.Drawing.Point(150, 315);
+            this.txtBasico.Name = "txtBasico";
+            this.txtBasico.ReadOnly = true;
+            this.txtBasico.Size = new System.Drawing.Size(100, 20);
+            this.txtBasico.TabIndex = 46;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(8, 524);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 13);
+            this.label3.TabIndex = 47;
+            this.label3.Text = "Descripcion";
+            // 
+            // txtDesc
+            // 
+            this.txtDesc.Location = new System.Drawing.Point(104, 521);
+            this.txtDesc.Name = "txtDesc";
+            this.txtDesc.ReadOnly = true;
+            this.txtDesc.Size = new System.Drawing.Size(100, 20);
+            this.txtDesc.TabIndex = 48;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 576);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(28, 13);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "Tipo";
+            // 
+            // txtTipo
+            // 
+            this.txtTipo.Location = new System.Drawing.Point(104, 573);
+            this.txtTipo.Name = "txtTipo";
+            this.txtTipo.ReadOnly = true;
+            this.txtTipo.Size = new System.Drawing.Size(100, 20);
+            this.txtTipo.TabIndex = 50;
+            // 
+            // button7
+            // 
+            this.button7.Location = new System.Drawing.Point(273, 339);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(75, 23);
+            this.button7.TabIndex = 51;
+            this.button7.Text = "Ver Familia";
+            this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(48, 344);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(73, 13);
+            this.label8.TabIndex = 52;
+            this.label8.Text = "Hijos menores";
+            // 
+            // txtHijos
+            // 
+            this.txtHijos.Location = new System.Drawing.Point(150, 341);
+            this.txtHijos.Name = "txtHijos";
+            this.txtHijos.ReadOnly = true;
+            this.txtHijos.Size = new System.Drawing.Size(100, 20);
+            this.txtHijos.TabIndex = 53;
+            // 
+            // dgvFamilia
+            // 
+            this.dgvFamilia.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvFamilia.Location = new System.Drawing.Point(391, 211);
+            this.dgvFamilia.Name = "dgvFamilia";
+            this.dgvFamilia.Size = new System.Drawing.Size(389, 81);
+            this.dgvFamilia.TabIndex = 54;
+            this.dgvFamilia.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvFamilia_CellContentClick);
+            // 
+            // txtDNI
+            // 
+            this.txtDNI.Location = new System.Drawing.Point(551, 300);
+            this.txtDNI.Name = "txtDNI";
+            this.txtDNI.ReadOnly = true;
+            this.txtDNI.Size = new System.Drawing.Size(100, 20);
+            this.txtDNI.TabIndex = 55;
+            // 
+            // txtEdad
+            // 
+            this.txtEdad.Location = new System.Drawing.Point(552, 353);
+            this.txtEdad.Name = "txtEdad";
+            this.txtEdad.ReadOnly = true;
+            this.txtEdad.Size = new System.Drawing.Size(100, 20);
+            this.txtEdad.TabIndex = 57;
+            // 
+            // dtpFamiliar
+            // 
+            this.dtpFamiliar.Enabled = false;
+            this.dtpFamiliar.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpFamiliar.Location = new System.Drawing.Point(552, 327);
+            this.dtpFamiliar.Name = "dtpFamiliar";
+            this.dtpFamiliar.Size = new System.Drawing.Size(100, 20);
+            this.dtpFamiliar.TabIndex = 58;
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(677, 353);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 23);
+            this.button8.TabIndex = 59;
+            this.button8.Text = "Agregar";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(453, 303);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(64, 13);
+            this.label9.TabIndex = 60;
+            this.label9.Text = "DNI Familiar";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(453, 333);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(93, 13);
+            this.label12.TabIndex = 61;
+            this.label12.Text = "Fecha Nacimiento";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(453, 356);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(32, 13);
+            this.label17.TabIndex = 62;
+            this.label17.Text = "Edad";
+            // 
+            // comboMes
+            // 
+            this.comboMes.FormattingEnabled = true;
+            this.comboMes.Location = new System.Drawing.Point(463, 82);
+            this.comboMes.Name = "comboMes";
+            this.comboMes.Size = new System.Drawing.Size(67, 21);
+            this.comboMes.TabIndex = 63;
+            // 
+            // comboAño
+            // 
+            this.comboAño.FormattingEnabled = true;
+            this.comboAño.Location = new System.Drawing.Point(536, 82);
+            this.comboAño.Name = "comboAño";
+            this.comboAño.Size = new System.Drawing.Size(61, 21);
+            this.comboAño.TabIndex = 64;
+            // 
+            // ID
+            // 
+            this.ID.HeaderText = "ID Concepto";
+            this.ID.Name = "ID";
             // 
             // Descripcion
             // 
@@ -182,151 +523,124 @@
             this.Valor.HeaderText = "Valor";
             this.Valor.Name = "Valor";
             // 
-            // IDConcepto
+            // Tipo
             // 
-            this.IDConcepto.HeaderText = "ID Concepto";
-            this.IDConcepto.Name = "IDConcepto";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(93, 195);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(91, 15);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "EMPLEADOS";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(443, 195);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(90, 15);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "CONCEPTOS";
-            // 
-            // dataGridView3
-            // 
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.ValorNovedad,
-            this.Fecha,
-            this.ID_Empleado});
-            this.dataGridView3.Location = new System.Drawing.Point(158, 415);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.Size = new System.Drawing.Size(441, 150);
-            this.dataGridView3.TabIndex = 13;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // ValorNovedad
-            // 
-            this.ValorNovedad.HeaderText = "Valor";
-            this.ValorNovedad.Name = "ValorNovedad";
-            // 
-            // Fecha
-            // 
-            this.Fecha.HeaderText = "Fecha";
-            this.Fecha.Name = "Fecha";
-            // 
-            // ID_Empleado
-            // 
-            this.ID_Empleado.HeaderText = "ID Empleado";
-            this.ID_Empleado.Name = "ID_Empleado";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(306, 398);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(90, 15);
-            this.label7.TabIndex = 14;
-            this.label7.Text = "NOVEDADES";
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(568, 607);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(85, 23);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "Liquidar";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(667, 607);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 23);
-            this.button3.TabIndex = 16;
-            this.button3.Text = "Cancelar";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Tipo.HeaderText = "Tipo";
+            this.Tipo.Name = "Tipo";
             // 
             // PantallaLiquidacion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(792, 656);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.dataGridView3);
+            this.ClientSize = new System.Drawing.Size(801, 709);
+            this.Controls.Add(this.comboAño);
+            this.Controls.Add(this.comboMes);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.button8);
+            this.Controls.Add(this.dtpFamiliar);
+            this.Controls.Add(this.txtEdad);
+            this.Controls.Add(this.txtDNI);
+            this.Controls.Add(this.dgvFamilia);
+            this.Controls.Add(this.txtHijos);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.button7);
+            this.Controls.Add(this.txtTipo);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.button1);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.comboBox2);
+            this.Controls.Add(this.txtDesc);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtBasico);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.button6);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.dateTimePicker2);
+            this.Controls.Add(this.txtfechaing);
+            this.Controls.Add(this.dgv);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.button4);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txtUnidades);
+            this.Controls.Add(this.txtValor);
+            this.Controls.Add(this.txtIDCon);
+            this.Controls.Add(this.label16);
+            this.Controls.Add(this.label15);
+            this.Controls.Add(this.label14);
+            this.Controls.Add(this.comboConceptos);
+            this.Controls.Add(this.txtAnt);
+            this.Controls.Add(this.txtCUIL);
+            this.Controls.Add(this.txtAyP);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.comboEmpleado);
+            this.Controls.Add(this.comboCategoria);
+            this.Controls.Add(this.label2);
             this.Name = "PantallaLiquidacion";
             this.Text = "PantallaLiquidacion";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            this.Load += new System.EventHandler(this.PantallaLiquidacion_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgv)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvFamilia)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox comboCategoria;
+        private System.Windows.Forms.ComboBox comboEmpleado;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.TextBox txtAyP;
+        private System.Windows.Forms.TextBox txtCUIL;
+        private System.Windows.Forms.TextBox txtAnt;
+        private System.Windows.Forms.ComboBox comboConceptos;
+        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.TextBox txtIDCon;
+        private System.Windows.Forms.TextBox txtValor;
+        private System.Windows.Forms.TextBox txtUnidades;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDEmpleado;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ApellidoyNombre;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.DataGridView dgv;
+        private System.Windows.Forms.Label txtfechaing;
+        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox txtBasico;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox txtDesc;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.Button button7;
+        private System.Windows.Forms.Label label8;
+        public System.Windows.Forms.TextBox txtHijos;
+        private System.Windows.Forms.DataGridView dgvFamilia;
+        private System.Windows.Forms.TextBox txtDNI;
+        private System.Windows.Forms.TextBox txtEdad;
+        private System.Windows.Forms.DateTimePicker dtpFamiliar;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.ComboBox comboMes;
+        private System.Windows.Forms.ComboBox comboAño;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ID;
         private System.Windows.Forms.DataGridViewTextBoxColumn Descripcion;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor;
-        private System.Windows.Forms.DataGridViewTextBoxColumn IDConcepto;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.DataGridView dataGridView3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorNovedad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Fecha;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ID_Empleado;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
     }
 }

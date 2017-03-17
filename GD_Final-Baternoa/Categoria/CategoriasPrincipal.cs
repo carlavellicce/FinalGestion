@@ -33,5 +33,10 @@ namespace GD_Final_Baternoa.Categoria
             CategoriaProducto cp = new CategoriaProducto();
             cp.Visible = true;
         }
+
+        private void CategoriasPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

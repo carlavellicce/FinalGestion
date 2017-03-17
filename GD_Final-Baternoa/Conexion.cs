@@ -24,7 +24,7 @@ namespace GD_Final_Baternoa
         {
             try
             {
-                cn = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
+                cn = new SqlConnection(@"Data Source=EMYLAVENIA\SQLEXPRESS;Initial Catalog=Gestion-V2;Integrated Security=True");
                 cn.Open();
                 MessageBox.Show("Conectado");
             }

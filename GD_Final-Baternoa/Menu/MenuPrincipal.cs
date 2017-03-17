@@ -19,7 +19,8 @@ namespace GD_Final_Baternoa.Menu
 
         private void btnLiquidacion_Click(object sender, EventArgs e)
         {
-
+            Liquidacion.Principal al = new Liquidacion.Principal();
+            al.Visible = true;
         }
 
         private void btnClientes_Click(object sender, EventArgs e)
@@ -56,6 +57,17 @@ namespace GD_Final_Baternoa.Menu
         {
             Categoria.CategoriasPrincipal ca = new Categoria.CategoriasPrincipal();
             ca.Visible = true;
+        }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Empleado.ABMUsuario abmu = new Empleado.ABMUsuario();
+            abmu.Visible = true; 
         }
     }
 }

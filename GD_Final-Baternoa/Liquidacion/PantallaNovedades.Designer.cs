@@ -139,6 +139,7 @@
             this.Controls.Add(this.label1);
             this.Name = "PantallaNovedades";
             this.Text = "PantallaNovedades";
+            this.Load += new System.EventHandler(this.PantallaNovedades_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

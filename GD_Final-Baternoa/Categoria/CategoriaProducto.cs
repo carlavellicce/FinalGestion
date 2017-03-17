@@ -14,7 +14,7 @@ namespace GD_Final_Baternoa.Categoria
     public partial class CategoriaProducto : Form
     {
         Conexion c = new Conexion();
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
+        SqlConnection con = new SqlConnection(@"Data Source=EMYLAVENIA\SQLEXPRESS;Initial Catalog=Gestion-V2;Integrated Security=True");
         public CategoriaProducto()
         {
             InitializeComponent();

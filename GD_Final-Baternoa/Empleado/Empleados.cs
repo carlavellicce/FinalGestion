@@ -14,7 +14,7 @@ namespace GD_Final_Baternoa.Empleado
     public partial class Empleados : Form
     {
         Conexion c = new Conexion();
-        SqlConnection con = new SqlConnection("Data Source=.;Initial Catalog=Gestion-V2;Persist Security Info=True;User ID=sa;Password=12345");
+        SqlConnection con = new SqlConnection(@"Data Source=EMYLAVENIA\SQLEXPRESS;Initial Catalog=Gestion-V2;Integrated Security=True");
         public Empleados()
         {
             InitializeComponent();
@@ -429,16 +429,16 @@ namespace GD_Final_Baternoa.Empleado
 
             return edad;
 
-
-
-
-
-
         }
 
         private void button2_Click_1(object sender, EventArgs e)
         {
             
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

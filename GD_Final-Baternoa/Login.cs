@@ -8,16 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using System.Security.Cryptography;
 
 namespace GD_Final_Baternoa
 {
     public partial class Login : Form
     {
-      
+
+        private string password = null;
+        private string contraseñaEncrip;
+
         public Login()
         {
             InitializeComponent();
-
 
         }
 
@@ -30,13 +33,29 @@ namespace GD_Final_Baternoa
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            //comentario de prueba git Primer intento
+            string nombreU = txtUsuario.Text;
 
-            //COMENTARIO EMILIA
+            password = txtContraseña.Text;
+            MD5 md5 = MD5.Create();
+            byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(password);
+            byte[] hash = md5.ComputeHash(inputBytes);
+            password = BitConverter.ToString(hash).Replace("-", "");
+            contraseñaEncrip = password.ToString();
 
-
-            Menu.MenuPrincipal MP = new Menu.MenuPrincipal();
-            MP.Visible = true;
+            SqlConnection con = new SqlConnection(@"Data Source = EMYLAVENIA\SQLEXPRESS; Initial Catalog = Gestion-V2; Integrated Security = True");
+            SqlDataAdapter sda = new SqlDataAdapter("Select * From Usuario Where NombreUsuario='" + nombreU + "' and Contraseña= '" + contraseñaEncrip + "'", con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            if (dt.Rows.Count == 1)
+            {
+                this.Hide();
+                Menu.MenuPrincipal mp = new Menu.MenuPrincipal();
+                mp.Show();
+            }
+            else
+            {
+                MessageBox.Show("DATOS DE USUARIO INCORRECTOS");
+            }
 
         }
 

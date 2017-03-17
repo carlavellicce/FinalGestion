@@ -16,5 +16,10 @@ namespace GD_Final_Baternoa.Liquidacion
         {
             InitializeComponent();
         }
+
+        private void AdminConceptos_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

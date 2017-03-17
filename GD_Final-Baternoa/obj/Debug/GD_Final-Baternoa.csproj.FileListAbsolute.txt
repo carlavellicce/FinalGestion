@@ -75,3 +75,27 @@ C:\Users\adm\Source\Repos\Gestion33\Gestion2\GD_Final-Baternoa\obj\Debug\GD_Fina
 C:\Users\Carla\SkyDrive\Final Gestion de datos\Nueva carpeta\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
 C:\Users\Carla\SkyDrive\Final Gestion de datos\Nueva carpeta\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.exe
 C:\Users\Carla\SkyDrive\Final Gestion de datos\Nueva carpeta\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.pdb
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe.config
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.exe
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.pdb
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.exe
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\bin\Debug\GD_Final-Baternoa.pdb
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.csprojResolveAssemblyReference.cache
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Categoria.CategoriaEmpleado.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Categoria.CategoriaProducto.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Categoria.CategoriasPrincipal.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Cliente.Clientes.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Empleado.ABMUsuario.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Empleado.Empleados.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.AdminConceptos.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.PantallaLiquidacion.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.PantallaNovedades.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Liquidacion.Principal.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Login.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Menu.MenuPrincipal.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Producto.Productos.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Properties.Resources.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Proveedor.Proveedores.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Venta.PantallaVenta.resources
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final-Baternoa.csproj.GenerateResource.Cache
+C:\Users\EmyLavenia\Desktop\UltimaVersionGD\GD_Final-Baternoa\obj\Debug\GD_Final_Baternoa.Empleado.VerFamilia.resources
